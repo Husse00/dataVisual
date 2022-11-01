@@ -1,0 +1,30 @@
+.sections{
+display: flex;
+gap: 17em;
+font-size: 23px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 700;
+margin-top: 2em; 
+justify-content: center;
+}
+.dataSection1{
+background-color: bisque;
+padding: 20px;
+}
+.dataSection2{
+    background-color: bisque;
+    padding: 20px;
+}
+.dataSection3{
+    background-color: bisque;
+    padding: 20px;
+}
+.persons{
+    display: flex;
+    gap: 17em;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    margin-top: 2em; 
+    justify-content: center;  
+}
