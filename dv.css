@@ -10,14 +10,17 @@ justify-content: center;
 .dataSection1{
 background-color: bisque;
 padding: 20px;
+border-radius: 10px;
 }
 .dataSection2{
-    background-color: bisque;
-    padding: 20px;
+background-color: bisque;
+padding: 20px;
+border-radius: 10px;
 }
 .dataSection3{
-    background-color: bisque;
-    padding: 20px;
+background-color: bisque;
+padding: 20px;
+border-radius: 10px;
 }
 .persons{
     display: flex;
