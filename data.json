@@ -1,0 +1,62 @@
+{ 
+"medarebetare": [ {
+"attribut": [
+ { 
+    "Personnummer": [
+    {"Attribute (eng tech.)": { "socialSecurityNumber": ""}},
+    {"Attributmappning (andra källor)": [
+        { "SAMBI": {"personalIdentityNumber": ""}}, {"Inera PU": ""}]},
+    {"Källsystem (source system)": {"personuppgiftstjänsten": ""}},
+    {"Syfte/användsningsområde": {"identifiering av användare": ""}},
+    {"Definition": "Personer som är folkbokförda i Sverige får ett personnummer som identitetsbeteckning. Denna fås från Skatteverket och består av födelsetid, födelsenummer och kontrollsiffra."},{"kommentar": ""},
+    {"Källa": "Skatteverket"},
+    {"Syntax": {"ÅÅÅÅMMDDNNNK (navet)": ""}},
+    {"Max antal tecken": "12"},
+    {"Kodverk": ""},
+    {"Exempel-data":"198601014829 (kvinna), 198601016556 (man)" },
+    {"Finns i SUSSA": "ja"},
+    {"Finns i RS": ""},
+    {"CCHSA-API": "CCHUser/IdentityInformation/PersonalIdentifyNumber"},
+    {"Invånare": "ja"},
+    {"Medarebetare": "ja"}
+    ],
+    "samordningsnummer": "",
+    "tilltalsnamn": "",
+    "efternamn": "",
+    "födelsedatum": "",
+    "folkbokförinsadress": "",
+    "särskild postadress": "",
+    "E-postadress arbetet": "",
+    "län": "",
+    "kommun": "",
+    "kod": "",
+    "Typ av medarbetare": "",
+    "organisationstillhöriget": "",
+    "organisatorisk enhetstillhöriget": "",
+    "Titel": "",
+    "Anställningsform Anställningsform (ref)": "",
+    "Etikett": "",
+    "Yrkeskategori": "",
+    "Chefskod": "",
+    "Ansvarig chef": "",
+    "Mobilnummer arbetet": "",
+    "Direkttelefon": "",
+    "E-postadress extern": "",
+    "E-postadress arbete": "",
+    "Passnummer": "",
+    "giltighetstid för pass": "",
+    "Användarkonto 0..*": "",
+    "Startdatum": "",
+    "Slutdatum": "",
+    "HSA-id": "",
+    "Har förskrivningsrätt": "",
+    "förskrivarkod": "",
+    "Gruppförskrivarkod": "",
+    "Medicinsk rådgivare": "",
+    "HOSP-id": "",
+    "Utökad yrkeskod": "",
+    "Medarbetareuppdrag [0..*]": ""
+ }
+] }
+]
+}
