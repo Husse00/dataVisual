@@ -12,14 +12,14 @@ color: rgb(252, 232, 206);
 .h1{
 padding-top: 28px;
 margin-top: 0;
-font-family: Georgia, 'Times New Roman', Times, serif;
+font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 font-size: 16px;
 }
 .sections{
 display: flex;
 gap: 14em;
 font-size: 23px;
-font-family: Georgia, 'Times New Roman', Times, serif;
+font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 font-weight: 700;
 margin-top: 2em; 
 justify-content: center;
@@ -38,13 +38,4 @@ border-radius: 10px;
 background-color: rgb(117, 199, 137);
 padding: 20px;
 border-radius: 10px;
-}
-.persons{
-    display: flex;
-    gap: 17em;
-    font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 700;
-    margin-top: 2em; 
-    justify-content: center;  
 }
