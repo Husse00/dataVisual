@@ -7,16 +7,17 @@ return response.json();
 }).then(function(obj){
    
     console.log(obj.attribut)
-    data.innerHTML +=
-    `Tilltalsnamn: ${obj.attribut.tilltalsnamn} --
+    data.innerHTML += 
+   `Tilltalsnamn: ${obj.attribut.tilltalsnamn} --
     Efternamn: ${obj.attribut.efternamn} --
     Födelsedatum: ${obj.attribut.födelsedatum} --
     folkbokförinsadress: ${obj.attribut.folkbokförinsAdress} --
     särskild postadress: ${obj.attribut.särskildpostAdress} --
     E-postadress Arbetet: ${obj.attribut.EpostadressaArbetet} --
-    Län: ${obj.attribut.län}`
+   `;
 
-
+   
+  
     root.append(data)
     
   
