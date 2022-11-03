@@ -60,11 +60,12 @@ cursor: pointer;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 18px;
   justify-content: center;
-    /* margin: auto;
+    margin: auto;
+    margin-top: 3em;
     background-color: rgb(115, 208, 172);
     padding: 20px;
     width: 700px;
-    border-radius: 15px; */
+    border-radius: 15px;
 } */
 .sections{
     
