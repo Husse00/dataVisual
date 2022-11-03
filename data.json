@@ -1,13 +1,13 @@
 { 
-"medarebetare": [ {
-"attribut": [
+
+"attribut":
  { 
     "Personnummer": [
     {"Attribute (eng tech.)": { "socialSecurityNumber": ""}},
     {"Attributmappning (andra källor)": [
         { "SAMBI": {"personalIdentityNumber": ""}}, {"Inera PU": ""}]},
     {"Källsystem (source system)": {"personuppgiftstjänsten": ""}},
-    {"Syfte/användsningsområde": {"i+++++++++++++++++++++++++dentifiering av användare": ""}},
+    {"Syfte/användsningsområde": {"dentifiering av användare": ""}},
     {"Definition": "Personer som är folkbokförda i Sverige får ett personnummer som identitetsbeteckning. Denna fås från Skatteverket och består av födelsetid, födelsenummer och kontrollsiffra."},{"kommentar": ""},
     {"Källa": "Skatteverket"},
     {"Syntax": {"ÅÅÅÅMMDDNNNK (navet)": ""}},
@@ -21,16 +21,16 @@
     {"Medarebetare": "ja"}
     ],
     "samordningsnummer": "",
-    "tilltalsnamn": "",
-    "efternamn": "",
-    "födelsedatum": "",
-    "folkbokförinsadress": "",
-    "särskild postadress": "",
-    "E-postadress arbetet": "",
-    "län": "",
-    "kommun": "hehe",
+    "tilltalsnamn": "Jenny",
+    "efternamn": "Larsson",
+    "födelsedatum": "1990-03-26",
+    "folkbokförinsAdress": "xxxx",
+    "särskildpostAdress": "xxx",
+    "EpostadressaArbetet": "jenny@regionblekinge.se",
+    "län": "Blekinge",
+    "kommun": "Karlskrona",
     "kod": "",
-    "Typ av medarbetare": "",
+    "Typ av medarbetare": "CEO",
     "organisationstillhöriget": "",
     "organisatorisk enhetstillhöriget": "",
     "Titel": "",
@@ -39,7 +39,7 @@
     "Yrkeskategori": "",
     "Chefskod": "",
     "Ansvarig chef": "",
-    "Mobilnummer arbetet": "",
+    "Mobilnummer arbetet": "991",
     "Direkttelefon": "",
     "E-postadress extern": "",
     "E-postadress arbete": "",
@@ -57,6 +57,4 @@
     "Utökad yrkeskod": "",
     "Medarbetareuppdrag [0..*]": ""
  }
-] }
-]
 }
