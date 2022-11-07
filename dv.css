@@ -26,7 +26,12 @@ margin-top: 1em;
 text-decoration: none;
 
 }
-
+.admin{
+display: block;
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+font-size: 23px;
+}
 .h1{
 padding-top: 28px;
 margin-top: 0;
@@ -73,45 +78,70 @@ cursor: pointer;
 }
 
 .dataDiv{
-width: 400px;
+width: 800px;
 border-style: solid;
 border-color: rgb(255, 255, 255);
 padding: 46px;
 margin-top: 90px;
-background-color: #231E39;
+background-color: #0e1f9f;
 border-radius: 12px;
 font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 font-size: 20px;
 color: aliceblue;
 }
+.data{
+    display: flex;
+    margin-left: 2.5em;
+}
+.iconImg{
+    display: block;
+    width: 100px;
+    justify-content: center;
+    margin: auto;
+    margin-top: -5em;
+    border-style: solid;
+border-color:rgb(255, 255, 255);
+border-radius: 50%;
+border-width: 6px;
+
+
+}
 .personBtn{
 padding: 8px;
 margin-inline: 24px;
-margin-top: 2em;
+margin-top: 1em;
 margin-bottom: 1em;
 font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 font-size: 17px;
+font-weight: 500px;
 width: 100px;
 text-align: center;
 color: #fff;
+font-size: 16px;
+border: none;
 border-radius: 3px;
-background-color: rgb(186, 4, 86);
+background-color: #00e2b9ce;
 cursor: pointer;
 }
 .personBtn:hover{
-    background-color: rgb(181, 88, 221);
+    background-color: rgb(186, 4, 86);
 }
-.bgDiv{
-width: 120px;
-height: 13px;
-background-color: rgb(186, 4, 86); 
 
-position: relative;
-top: 2em;
-left: 7em;
-}
 .attP{
-  color: #ffffff;
+  color: #000000;
   position: relative;
-  font-size: 17px;
+  font-size: 22px;
+  background-color: rgb(251, 243, 6);
+  padding: 6px;
+  line-height: 16px;
+  
+ 
+}
+.dataTable{
+display: flex;
+gap: 22em;
+margin-left: 16.6em;
+justify-content: center;
+margin: auto;
+margin-bottom: 1em;
 }
