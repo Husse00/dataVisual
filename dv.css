@@ -116,10 +116,13 @@ border-width: 6px;
   color: #000000;
   position: relative;
   font-size: 22px;
+  width: 85px;
   background-color: rgb(108, 231, 200);
   padding: 6px;
   line-height: 16px;
-  
+  justify-content: center;
+  margin: auto;
+  margin-top: 1.5em;
  
 }
 .dataTable{
