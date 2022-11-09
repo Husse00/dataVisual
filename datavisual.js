@@ -2,8 +2,10 @@ let root = document.getElementById("root")
 let data = document.getElementById("data")
 let divAttribute = document.getElementById("divAttribute")
 let dataInfo = document.getElementById("dataDisplayId")
-let infoBtn = document.getElementById("infoBtn") 
-
+let infoBtn1 = document.querySelector(".infoBtn1") 
+let infoBtn2 = document.querySelector(".infoBtn2") 
+let p = document.createElement("p")
+dataInfo.append(p)
 data.style.display = "none"
 divAttribute.addEventListener('click', ()=>{
     if(data.style.display == 'none'){
@@ -11,19 +13,42 @@ divAttribute.addEventListener('click', ()=>{
     } else {
         data.style.display = 'none'
         dataInfo.style.display = "none"
+        infoBtn1.style.backgroundColor = "#3c0580"
+        infoBtn2.style.backgroundColor = "#3c0580"
     }
 })
 
 dataInfo.style.display = "none"
-infoBtn.addEventListener('click', ()=>{
+infoBtn1.addEventListener('click', ()=>{
 
-if(dataInfo.style.display == 'none')
-{
-    dataInfo.style.display = "block"
-    infoBtn.style.backgroundColor = "#b41083"
-} else {
-    dataInfo.style.display = "none"
-    infoBtn.style.backgroundColor = "#3c0580"
-}
+    if(dataInfo.style.display == 'none' || dataInfo.style.display == 'block')
+    {
+        dataInfo.style.display = "block"
+        p.innerHTML = "hello world"
+        infoBtn1.style.backgroundColor = "#b41083"
+        infoBtn2.style.backgroundColor = "#3c0580"
+    } else {
+        dataInfo.style.display = "none"
+        infoBtn1.style.backgroundColor = "#3c0580"
+    }
+
 
 })
+infoBtn2.addEventListener('click', ()=>{
+    if(dataInfo.style.display == 'none' || dataInfo.style.display == 'block')
+    {
+        dataInfo.style.display = "block"
+        p.innerHTML = "bye world"
+        infoBtn1.style.backgroundColor = "#3c0580"
+        infoBtn2.style.backgroundColor = "#b41083"
+    } else{
+        dataInfo.style.display = "none"
+        infoBtn2.style.backgroundColor = "#3c0580"
+    }
+
+})
+dataInfo.addEventListener('click', ()=>{
+dataInfo.style.display = "none"
+
+})
+
