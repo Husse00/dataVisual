@@ -8,7 +8,8 @@
         { "SAMBI": {"personalIdentityNumber": ""}}, {"Inera PU": ""}]},
     {"Källsystem (source system)": {"personuppgiftstjänsten": ""}},
     {"Syfte/användsningsområde": {"dentifiering av användare": ""}},
-    {"Definition": "Personer som är folkbokförda i Sverige får ett personnummer som identitetsbeteckning. Denna fås från Skatteverket och består av födelsetid, födelsenummer och kontrollsiffra."},{"kommentar": ""},
+    {"Definition": "Personer som är folkbokförda i Sverige får ett personnummer som identitetsbeteckning. Denna fås från Skatteverket och består av födelsetid, födelsenummer och kontrollsiffra."}
+    ,{"kommentar": ""},
     {"Källa": "Skatteverket"},
     {"Syntax": {"ÅÅÅÅMMDDNNNK (navet)": ""}},
     {"Max antal tecken": "12"},
