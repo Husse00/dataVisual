@@ -25,12 +25,12 @@ infoBtn1.addEventListener('click', ()=>{
     if(dataInfo.style.display == 'none' || dataInfo.style.display == 'block')
     {
         dataInfo.style.display = "block"
-        p.innerHTML = "hello world"
+        p.innerHTML = "First Data"
         infoBtn1.style.backgroundColor = "#b41083"
         infoBtn2.style.backgroundColor = "#3c0580"
     } else {
         dataInfo.style.display = "none"
-        infoBtn1.style.backgroundColor = "#3c0580"
+        infoBtn1.style.backgroundColor != "#3c0580"
     }
 
 
@@ -39,7 +39,7 @@ infoBtn2.addEventListener('click', ()=>{
     if(dataInfo.style.display == 'none' || dataInfo.style.display == 'block')
     {
         dataInfo.style.display = "block"
-        p.innerHTML = "bye world"
+        p.innerHTML = "Different Data"
         infoBtn1.style.backgroundColor = "#3c0580"
         infoBtn2.style.backgroundColor = "#b41083"
     } else{

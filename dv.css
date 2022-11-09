@@ -182,3 +182,11 @@ gap: 2rem;
     right: 2em;
  
 }
+.idImg{
+width: 70px;
+position: absolute;
+top: -2.2em;
+right: 13em;
+display: flex;
+
+}
