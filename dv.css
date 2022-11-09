@@ -176,3 +176,9 @@ width: 1500px;
 display: flex;
 gap: 2rem;
 }
+.exitImg{
+    width: 30px;
+    position: absolute;
+    right: 2em;
+ 
+}

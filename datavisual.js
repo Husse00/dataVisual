@@ -4,6 +4,7 @@ let divAttribute = document.getElementById("divAttribute")
 let dataInfo = document.getElementById("dataDisplayId")
 let infoBtn1 = document.querySelector(".infoBtn1") 
 let infoBtn2 = document.querySelector(".infoBtn2") 
+let closeBtn = document.querySelector(".exitImg") 
 let p = document.createElement("p")
 dataInfo.append(p)
 data.style.display = "none"
@@ -47,7 +48,7 @@ infoBtn2.addEventListener('click', ()=>{
     }
 
 })
-dataInfo.addEventListener('click', ()=>{
+closeBtn.addEventListener('click', ()=>{
 dataInfo.style.display = "none"
 
 })
