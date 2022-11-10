@@ -42,6 +42,7 @@ infoBtn1.addEventListener('click', ()=>{
         dataInfo.style.display = "block"
         p.innerHTML = "Personnummer"
         synonym.innerHTML = "HELLO"
+        attributENG.innerHTML = ""
         infoBtn1.style.backgroundColor = "#b41083"
         infoBtn2.style.backgroundColor = "#3c0580"
     } else {
