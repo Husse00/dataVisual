@@ -7,7 +7,17 @@ let infoBtn2 = document.querySelector(".infoBtn2")
 let closeBtn = document.querySelector(".exitImg") 
 let p = document.querySelector(".dataP")
 
-dataInfo.append()
+//// importing data info card 
+let synonym = document.getElementById("data1");
+synonym.innerHTML = ""
+let attributENG = document.getElementById("data2");
+attributENG.innerHTML = ""
+
+
+
+
+
+
 
 
 
@@ -15,6 +25,7 @@ data.style.display = "none"
 divAttribute.addEventListener('click', ()=>{
     if(data.style.display == 'none'){
         data.style.display = 'block';
+
     } else {
         data.style.display = 'none'
         dataInfo.style.display = "none"
@@ -30,6 +41,7 @@ infoBtn1.addEventListener('click', ()=>{
     {
         dataInfo.style.display = "block"
         p.innerHTML = "Personnummer"
+        synonym.innerHTML = "HELLO"
         infoBtn1.style.backgroundColor = "#b41083"
         infoBtn2.style.backgroundColor = "#3c0580"
     } else {
@@ -44,11 +56,14 @@ infoBtn2.addEventListener('click', ()=>{
     {
         dataInfo.style.display = "block"
         p.innerHTML = "Sammordningsnummer"
+        synonym.innerHTML = "BYE"
+        attributENG.innerHTML = "123"
         infoBtn1.style.backgroundColor = "#3c0580"
         infoBtn2.style.backgroundColor = "#b41083"
     } else{
         dataInfo.style.display = "none"
         infoBtn2.style.backgroundColor = "#3c0580"
+        
     }
 
 })
