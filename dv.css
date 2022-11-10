@@ -156,8 +156,8 @@ margin-bottom: -1em;
 
 }
 .dataDisplay{
-width: 500px;
-height: 400px;
+width: 800px;
+height: 900px;
 background-color: #0e769f;
 margin-left: 4em;
 border-style: solid;
@@ -169,7 +169,8 @@ font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 font-size: 20px;
 color: aliceblue;
 position: absolute;
-right: 17em;
+top: 21.2em;
+right: 2em;
 }
 .dataInfo{
 width: 1500px;
@@ -187,7 +188,30 @@ gap: 2rem;
 width: 70px;
 position: absolute;
 top: -2.2em;
-right: 13em;
+right: 20.4em;
 display: flex;
 
+}
+.dataP{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+justify-content: center;
+margin: auto;
+margin-top: 1.3em;
+}
+.infoDis{
+display: flex;
+justify-content: center;
+margin: auto;
+margin-top: 2.4em;
+gap: 1.4em;
+}
+
+.infoDisCard{
+width: 160px;
+height: 200px;
+padding: 10px;
+background-color:  rgb(60, 5, 128);
+border-radius: 10px;
+font-size: 14px;
+font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }

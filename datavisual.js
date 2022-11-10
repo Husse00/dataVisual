@@ -5,8 +5,12 @@ let dataInfo = document.getElementById("dataDisplayId")
 let infoBtn1 = document.querySelector(".infoBtn1") 
 let infoBtn2 = document.querySelector(".infoBtn2") 
 let closeBtn = document.querySelector(".exitImg") 
-let p = document.createElement("p")
-dataInfo.append(p)
+let p = document.querySelector(".dataP")
+
+dataInfo.append()
+
+
+
 data.style.display = "none"
 divAttribute.addEventListener('click', ()=>{
     if(data.style.display == 'none'){
@@ -25,7 +29,7 @@ infoBtn1.addEventListener('click', ()=>{
     if(dataInfo.style.display == 'none' || dataInfo.style.display == 'block')
     {
         dataInfo.style.display = "block"
-        p.innerHTML = "First Data"
+        p.innerHTML = "Personnummer"
         infoBtn1.style.backgroundColor = "#b41083"
         infoBtn2.style.backgroundColor = "#3c0580"
     } else {
@@ -39,7 +43,7 @@ infoBtn2.addEventListener('click', ()=>{
     if(dataInfo.style.display == 'none' || dataInfo.style.display == 'block')
     {
         dataInfo.style.display = "block"
-        p.innerHTML = "Different Data"
+        p.innerHTML = "Sammordningsnummer"
         infoBtn1.style.backgroundColor = "#3c0580"
         infoBtn2.style.backgroundColor = "#b41083"
     } else{
