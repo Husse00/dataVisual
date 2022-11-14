@@ -7,17 +7,19 @@ let infoBtn2 = document.querySelector(".infoBtn2")
 let closeBtn = document.querySelector(".exitImg") 
 let p = document.querySelector(".dataP")
 
-//// importing data info card 
-let synonym = document.getElementById("data1");
-synonym.innerHTML = ""
-let attributENG = document.getElementById("data2");
-attributENG.innerHTML = ""
-
-
-
-
-
-
+//// importing data info card from the html
+let synonym = document.getElementById("data1"); synonym.innerHTML = "";
+let attributENG = document.getElementById("data2"); attributENG.innerHTML = "";
+let attributMap = document.getElementById("data3"); attributMap.innerHTML = "";
+let källsystem = document.getElementById("data4"); källsystem.innerHTML = "";
+let syfte = document.getElementById("data5"); syfte.innerHTML = "";
+let def = document.getElementById("data6"); def.innerHTML = "";
+let kommentar = document.getElementById("data7"); kommentar.innerHTML = "";
+let källa = document.getElementById("data8"); källa.innerHTML = "";
+let syntax = document.getElementById("data9"); syntax.innerHTML = "";
+let tecken = document.getElementById("data10"); tecken.innerHTML = "";
+let kodverk = document.getElementById("data11"); kodverk.innerHTML = "";
+let exData = document.getElementById("data12"); exData.innerHTML = "";
 
 
 
@@ -45,9 +47,10 @@ infoBtn1.addEventListener('click', ()=>{
         attributENG.innerHTML = ""
         infoBtn1.style.backgroundColor = "#b41083"
         infoBtn2.style.backgroundColor = "#3c0580"
-    } else {
+    } 
+    else {
         dataInfo.style.display = "none"
-        infoBtn1.style.backgroundColor != "#3c0580"
+        infoBtn1.style.backgroundColor = "#3c0580"
     }
 
 
@@ -61,15 +64,20 @@ infoBtn2.addEventListener('click', ()=>{
         attributENG.innerHTML = "123"
         infoBtn1.style.backgroundColor = "#3c0580"
         infoBtn2.style.backgroundColor = "#b41083"
-    } else{
+    } 
+    else{
         dataInfo.style.display = "none"
         infoBtn2.style.backgroundColor = "#3c0580"
         
     }
 
 })
+
+
+// data pop-up close Btn events, removes the popup and the pink highlight colour on the button.
 closeBtn.addEventListener('click', ()=>{
 dataInfo.style.display = "none"
-
+infoBtn1.style.backgroundColor = "#3c0580"
+infoBtn2.style.backgroundColor = "#3c0580"
 })
 
