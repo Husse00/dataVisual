@@ -212,6 +212,9 @@ height: 200px;
 padding: 10px;
 background-color:  rgb(60, 5, 128);
 border-radius: 10px;
-font-size: 14px;
+font-size: 13px;
 font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+.dataP2{
+color: aqua;
 }
