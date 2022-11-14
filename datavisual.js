@@ -7,6 +7,7 @@ let infoBtn2 = document.querySelector(".infoBtn2")
 let closeBtn = document.querySelector(".exitImg") 
 let p = document.querySelector(".dataP")
 p.classList.add("dataParagraph")
+let underline = document.getElementById("underline1")
 
 //// importing data info card from the html
 let synonym = document.getElementById("data1"); synonym.innerHTML = "";
@@ -27,16 +28,18 @@ data.style.display = "none"
 divAttribute.addEventListener('click', ()=>{
     if(data.style.display == 'none'){
         data.style.display = 'block';
-
+     underline.classList.toggle("line")
     } else {
         data.style.display = 'none'
         dataInfo.style.display = "none"
         infoBtn1.style.backgroundColor = "#3c0580"
         infoBtn2.style.backgroundColor = "#3c0580"
+
     }
 })
 
 dataInfo.style.display = "none"
+// INFO BUTTON 1 
 infoBtn1.addEventListener('click', ()=>{
 
     if(dataInfo.style.display == 'none' || dataInfo.style.display == 'block')
@@ -59,14 +62,17 @@ infoBtn1.addEventListener('click', ()=>{
         /////////////////////////////////////////////////////////////////////////////////
         infoBtn1.style.backgroundColor = "#b41083"
         infoBtn2.style.backgroundColor = "#3c0580"
+        underline.classList.add("line")
     } 
     else {
         dataInfo.style.display = "none"
         infoBtn1.style.backgroundColor = "#3c0580"
+       
     }
 
 
 })
+// INFO BUTTON 2
 infoBtn2.addEventListener('click', ()=>{
     if(dataInfo.style.display == 'none' || dataInfo.style.display == 'block')
     {
@@ -87,14 +93,17 @@ infoBtn2.addEventListener('click', ()=>{
          exData.innerHTML = ``
          /////////////////////////////////////////////////////////////////////////////////
        
-
+        
         infoBtn1.style.backgroundColor = "#3c0580"
         infoBtn2.style.backgroundColor = "#b41083"
+        underline.classList.add("line")
+        
     } 
     else{
         dataInfo.style.display = "none"
         infoBtn2.style.backgroundColor = "#3c0580"
-        
+
+       
     }
 
 })

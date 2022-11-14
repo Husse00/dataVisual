@@ -197,6 +197,8 @@ display: flex;
 justify-content: center;
 margin: auto;
 margin-top: 1.3em;
+font-size: 28px;
+
 }
 .infoDis{
 display: flex;
@@ -219,4 +221,28 @@ font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 color: rgb(24, 255, 190);
 outline-offset: .6rem;
 
+}
+.underline{
+width: 255px;
+height: 5px;
+background-color: rgb(24, 255, 190);
+border-radius: 3px;
+display: flex;
+justify-content: center;
+margin: auto;
+margin-top: 0.4em;
+}
+.line{
+    animation: line 0.3s 
+
+}
+@keyframes line {
+    0% {
+        width: 40px;
+        transform: scale(1);
+    }
+    100% {
+        width: 255px;
+        transform: scale(1);
+    }
 }
