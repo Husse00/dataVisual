@@ -46,7 +46,7 @@ infoBtn1.addEventListener('click', ()=>{
         // inside data
         synonym.innerHTML = ""
         attributENG.innerHTML = "Social Security Number"
-        attributMap.innerHTML = `SAMBI | INERA <br></br> personal identity Number`
+        attributMap.innerHTML = `SAMBI | INERA <br></br> personal  identity Number`
         källsystem.innerHTML = "personuppgiftstjänsten"
         syfte.innerHTML = "Identifiering av användare"
         def.innerHTML = "Personer som är folkbokförda i Sverige får ett personnummer som identitetsbeteckning. Denna fås från Skatteverket och består av födelsetid, födelsenummer och kontrollsiffra."

@@ -216,5 +216,7 @@ font-size: 13px;
 font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 .dataP2{
-color: aqua;
+color: rgb(24, 255, 190);
+outline-offset: .6rem;
+
 }
