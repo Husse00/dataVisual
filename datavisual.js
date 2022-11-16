@@ -5,6 +5,7 @@ let dataInfo = document.getElementById("dataDisplayId")
 let infoBtn1 = document.querySelector(".infoBtn1") 
 let infoBtn2 = document.querySelector(".infoBtn2") 
 let infoBtn3 = document.querySelector(".infoBtn3") 
+let infoBtn4 = document.querySelector(".infoBtn4") 
 let closeBtn = document.querySelector(".exitImg") 
 let p = document.querySelector(".dataP")
 p.classList.add("dataParagraph")
@@ -69,6 +70,7 @@ infoBtn1.addEventListener('click', ()=>{
         // changing buttons of the UNselected buttons
         infoBtn2.style.backgroundColor = "#3c0580"
         infoBtn3.style.backgroundColor = "#3c0580"
+        infoBtn4.style.backgroundColor = "#3c0580"
        
         underline.classList.add("line")
     } 
@@ -87,17 +89,17 @@ infoBtn2.addEventListener('click', ()=>{
         p.innerHTML = "Sammordningsnummer"
          // inside data
          synonym.innerHTML = ""
-         attributENG.innerHTML = ""
-         attributMap.innerHTML = `SAMBI | INERA <br></br>`
-         källsystem.innerHTML = ""
-         syfte.innerHTML = ""
-         def.innerHTML = ""
+         attributENG.innerHTML = "Co-Ordination Number"
+         attributMap.innerHTML = `SAMBI | INERA <br></br> Personal identity Number`
+         källsystem.innerHTML = "Personuppgiftstjänsten"
+         syfte.innerHTML = "Identifiering av användare"
+         def.innerHTML = "Är en en identitetsbeteckning för en person som inte är eller har varit folkbokförd i Sverige"
          kommentar.innerHTML = ""
-         källa.innerHTML = ""
-         syntax.innerHTML = ""
+         källa.innerHTML = "Skatteverket"
+         syntax.innerHTML = "ÅÅÅÅMMDDNNNK där MM = 00 - 12, DD = 60 - 91"
          tecken.innerHTML = ""
          kodverk.innerHTML = ""
-         exData.innerHTML = ``
+         exData.innerHTML = `19700161XXXX`
          /////////////////////////////////////////////////////////////////////////////////
          // changing colors of the selected button (2)
          infoBtn2.style.backgroundColor = "#b41083"
@@ -105,6 +107,7 @@ infoBtn2.addEventListener('click', ()=>{
         /////// changing buttons of the UNselected buttons
         infoBtn1.style.backgroundColor = "#3c0580"
         infoBtn3.style.backgroundColor = "#3c0580"
+        infoBtn4.style.backgroundColor = "#3c0580"
 
         underline.classList.add("line")
     } 
@@ -123,12 +126,12 @@ infoBtn3.addEventListener('click', ()=>{
         dataInfo.style.display = "block"
         p.innerHTML = "Tilltalsnamn"
          // inside data
-         synonym.innerHTML = ""
-         attributENG.innerHTML = ""
+         synonym.innerHTML = "Namn"
+         attributENG.innerHTML = "Given Name"
          attributMap.innerHTML = `SAMBI | INERA <br></br>`
          källsystem.innerHTML = ""
          syfte.innerHTML = ""
-         def.innerHTML = ""
+         def.innerHTML = "Personens tilltalsnamn i klartext"
          kommentar.innerHTML = ""
          källa.innerHTML = ""
          syntax.innerHTML = ""
@@ -142,11 +145,48 @@ infoBtn3.addEventListener('click', ()=>{
         /////// changing buttons of the UN-selected buttons
         infoBtn1.style.backgroundColor = "#3c0580"
         infoBtn2.style.backgroundColor = "#3c0580"
+        infoBtn4.style.backgroundColor = "#3c0580"
         underline.classList.add("line")
     } 
     else{
         dataInfo.style.display = "none"
         infoBtn3.style.backgroundColor = "#3c0580"
+
+       
+    }
+
+})
+infoBtn4.addEventListener('click', ()=>{
+    if(dataInfo.style.display == 'none' || dataInfo.style.display == 'block')
+    {
+        dataInfo.style.display = "block"
+        p.innerHTML = "Efternamn"
+         // inside data
+         synonym.innerHTML = "Efternamn"
+         attributENG.innerHTML = "Last Name"
+         attributMap.innerHTML = `SAMBI | INERA <br></br> Surname`
+         källsystem.innerHTML = "Personuppgiftstjänsten"
+         syfte.innerHTML = ""
+         def.innerHTML = "namn som anger släkt- eller familjetillhörighet"
+         kommentar.innerHTML = ""
+         källa.innerHTML = "Socialstyrelsen"
+         syntax.innerHTML = "1 - max antal tecken, Kan innehålla ’/’. Kan innehålla dubbla efternamn from 170701 $ "
+         tecken.innerHTML = "60"
+         kodverk.innerHTML = ""
+         exData.innerHTML = `van Basten Karlsson, Andersson, Larsson-Nilsson`
+         /////////////////////////////////////////////////////////////////////////////////
+         /////// changing colors of the selected button (3)
+        infoBtn4.style.backgroundColor = "#b41083"
+        
+        /////// changing buttons of the UN-selected buttons
+        infoBtn1.style.backgroundColor = "#3c0580"
+        infoBtn2.style.backgroundColor = "#3c0580"
+        infoBtn3.style.backgroundColor = "#3c0580"
+        underline.classList.add("line")
+    } 
+    else{
+        dataInfo.style.display = "none"
+        infoBtn4.style.backgroundColor = "#3c0580"
 
        
     }
@@ -158,6 +198,7 @@ dataInfo.style.display = "none"
 infoBtn1.style.backgroundColor = "#3c0580"
 infoBtn2.style.backgroundColor = "#3c0580"
 infoBtn3.style.backgroundColor = "#3c0580"
+infoBtn4.style.backgroundColor = "#3c0580"
 })
 
 /////////////
