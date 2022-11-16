@@ -121,7 +121,7 @@ border-style: solid;
 border-color: rgb(255, 255, 255);
 padding: 46px;
 margin-top: 90px;
-background-color: #0e769f;
+background-color: #02425c;
 border-radius: 12px;
 font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 font-size: 20px;
@@ -172,7 +172,7 @@ margin-bottom: -1em;
 .dataDisplay{
 width: 800px;
 height: 900px;
-background-color: #0e769f;
+background-color:#02425c;
 margin-left: 4em;
 border-style: solid;
 border-color: rgb(255, 255, 255);
