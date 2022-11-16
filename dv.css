@@ -232,9 +232,8 @@ background: linear-gradient(0deg, rgb(36, 206, 172) 0%, #5400B9 15%);
 border-radius: 10px;
 font-size: 13px;
 font-weight: 500;
-outline: 2px solid rgb(0, 0, 0);
-outline-offset: 5px;
-border: 2px solid rgb(255, 255, 255);
+
+border: 3px solid rgba(255, 255, 255, 0.919);
 font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
