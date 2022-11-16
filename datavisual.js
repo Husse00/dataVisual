@@ -1,62 +1,210 @@
 let root = document.getElementById("root")
 let data = document.getElementById("data")
 let divAttribute = document.getElementById("divAttribute")
-// CREATING PARAGRAPHS TO STORE THE FECTHED DATA IN.
+let dataInfo = document.getElementById("dataDisplayId")
+let infoBtn1 = document.querySelector(".infoBtn1") 
+let infoBtn2 = document.querySelector(".infoBtn2") 
+let infoBtn3 = document.querySelector(".infoBtn3") 
+let infoBtn4 = document.querySelector(".infoBtn4") 
+let closeBtn = document.querySelector(".exitImg") 
+let infoLogo = document.querySelector(".idImg")
+let p = document.querySelector(".dataP")
+let dataDiv1 = document.querySelector(".dataDiv1")
+let dataDiv2 = document.querySelector(".dataDiv2")
+p.classList.add("dataParagraph")
+let underline = document.getElementById("underline1")
+underline.classList.add("line")
+infoLogo.classList.add("dropdown")
+//// importing data info card from the html
+let synonym = document.getElementById("data1"); synonym.innerHTML = "";
+let attributENG = document.getElementById("data2"); attributENG.innerHTML = "";
+let attributMap = document.getElementById("data3"); attributMap.innerHTML = "";
+let källsystem = document.getElementById("data4"); källsystem.innerHTML = "";
+let syfte = document.getElementById("data5"); syfte.innerHTML = "";
+let def = document.getElementById("data6"); def.innerHTML = "";
+let kommentar = document.getElementById("data7"); kommentar.innerHTML = "";
+let källa = document.getElementById("data8"); källa.innerHTML = "";
+let syntax = document.getElementById("data9"); syntax.innerHTML = "";
+let tecken = document.getElementById("data10"); tecken.innerHTML = "";
+let kodverk = document.getElementById("data11"); kodverk.innerHTML = "";
+let exData = document.getElementById("data12"); exData.innerHTML = "";
 
-let tilltalsnamn = document.createElement("p"); tilltalsnamn.classList.add("data")
-let efternamn = document.createElement("p"); efternamn.classList.add("data")
-let fdatum = document.createElement("p"); fdatum.classList.add("data")
-let folkbokförinsAdress = document.createElement("p"); folkbokförinsAdress.classList.add("data")
-let särskildpostAdress = document.createElement("p"); särskildpostAdress.classList.add("data")
-let EpostadressaArbetet = document.createElement("p"); EpostadressaArbetet.classList.add("data")
-let län = document.createElement("p"); län.classList.add("data")
-let kommun = document.createElement("P"); kommun.classList.add("data");
-let kod = document.createElement("p"); kod.classList.add("data");
-let TypAvMedarbetare = document.createElement("p"); TypAvMedarbetare.classList.add("data")
-let organisationstillhöriget = document.createElement("p"); organisationstillhöriget.classList.add("data")
-let organisatoriskEnhetstillhöriget = document.createElement("p"); organisatoriskEnhetstillhöriget.classList.add("data")
-let Titel = document.createElement("p"); Titel.classList.add("data")
-let Anställningsform = document.createElement("p"); Anställningsform.classList.add("data")
-let Etikett = document.createElement("p"); Etikett.classList.add("data")
 
-
-// FETCHING THE DATA
-fetch('data.json').then(function (response){
-return response.json();
-
-}).then(function(obj){
-   
-    console.log(obj.attribut)
-
-tilltalsnamn.innerHTML +=  `Tilltalsnamn: ${obj.attribut.tilltalsnamn}` ;
-efternamn.innerHTML += `Efternamn: ${obj.attribut.efternamn}`;
-fdatum.innerHTML += `Födelsedatum: ${obj.attribut.födelsedatum}`;
-folkbokförinsAdress.innerHTML += "Folkbokförings Adress: " + obj.attribut.folkbokförinsAdress 
-särskildpostAdress.innerHTML += `Särskild post-Adress: ${obj.attribut.särskildpostAdress}`
-EpostadressaArbetet.innerHTML += `Epostadress Arbetet: ${obj.attribut.EpostadressaArbetet}`
-län.innerHTML += "Län: " + obj.attribut.län
-kommun.innerHTML += "Kommun: " + obj.attribut.kommun
-kod.innerHTML += "Kod: " + obj.attribut.kod
-TypAvMedarbetare.innerHTML += "Typ Av Medarbetare: " + obj.attribut.TypAvMedarbetare
-organisationstillhöriget.innerHTML += "organisations tillhöriget: " + obj.attribut.organisationstillhöriget
-organisatoriskEnhetstillhöriget.innerHTML += "organisatorisk Enhetstillhöriget: " + obj.attribut.organisatoriskEnhetstillhöriget
-Titel.innerHTML += "Titel: " + obj.attribut.Titel
-Anställningsform.innerHTML += "Anställningsform: " + obj.attribut.Anställningsform
-Etikett.innerHTML += "Etikett: " + obj.attribut.Etikett
-  
-data.append(tilltalsnamn,efternamn,fdatum,folkbokförinsAdress,särskildpostAdress,EpostadressaArbetet,län,kommun,kod,TypAvMedarbetare,
-organisationstillhöriget,organisatoriskEnhetstillhöriget,Titel,Anställningsform,Etikett)
-    
-  
-}).catch(function(err){
-
-    console.log(err + "404")
-})
 data.style.display = "none"
 divAttribute.addEventListener('click', ()=>{
     if(data.style.display == 'none'){
         data.style.display = 'block';
+        dataDiv1.style.backgroundColor = "rgb(180, 16, 131)"
     } else {
         data.style.display = 'none'
+        dataInfo.style.display = "none"
+        dataDiv1.style.backgroundColor = "rgb(36, 206, 172)"
+        infoBtn1.style.backgroundColor = "#3c0580"
+        infoBtn2.style.backgroundColor = "#3c0580"
+        infoBtn3.style.backgroundColor = "#3c0580"
+        infoBtn4.style.backgroundColor = "#3c0580"
     }
 })
+
+dataInfo.style.display = "none"
+
+// INFO BUTTON 1 - personnummer
+
+infoBtn1.addEventListener('click', ()=>{
+    if(dataInfo.style.display == 'none' || dataInfo.style.display == 'block')
+    {
+        dataInfo.style.display = "block"
+        p.innerHTML = "Personnummer"
+        // inside data
+        synonym.innerHTML = ""
+        attributENG.innerHTML = "Social Security Number"
+        attributMap.innerHTML = `SAMBI | INERA <br></br>` + `<p class="sambi"> Personal <br></br> identity <br></br>Number </p>`
+        källsystem.innerHTML = "personuppgiftstjänsten"
+        syfte.innerHTML = "Identifiering av användare"
+        def.innerHTML = "Personer som är folkbokförda i Sverige får ett personnummer som identitetsbeteckning. Denna fås från Skatteverket och består av födelsetid, födelsenummer och kontrollsiffra."
+        kommentar.innerHTML = ""
+        källa.innerHTML = "Skatteverket"
+        syntax.innerHTML = "ÅÅÅÅMMDDNNNK (navet)"
+        tecken.innerHTML = "12"
+        kodverk.innerHTML = ""
+        exData.innerHTML = `198601014528 <br></br> (kvinna) <br></br> 198601016556 <br></br> (man)`
+        /////////////////////////////////////////////////////////////////////////////////
+        /////// changing colors of the selected button (1)
+        infoBtn1.style.backgroundColor = "#b41083"
+
+        // changing buttons of the UNselected buttons
+        infoBtn2.style.backgroundColor = "#3c0580"
+        infoBtn3.style.backgroundColor = "#3c0580"
+        infoBtn4.style.backgroundColor = "#3c0580"
+       
+        underline.classList.add("line")
+    } 
+    else {
+        dataInfo.style.display = "none"
+        infoBtn1.style.backgroundColor = "#3c0580"
+    }
+
+
+})
+// INFO BUTTON 2 - sammordningsnummer
+infoBtn2.addEventListener('click', ()=>{
+    if(dataInfo.style.display == 'none' || dataInfo.style.display == 'block')
+    {
+        dataInfo.style.display = "block"
+        p.innerHTML = "Sammordningsnummer"
+         // inside data
+         synonym.innerHTML = ""
+         attributENG.innerHTML = "Co-Ordination Number"
+         attributMap.innerHTML = `SAMBI | INERA <br></br>`  + `<p class="sambi"> Personal <br></br> identity <br></br>Number </p>`
+         källsystem.innerHTML = "Personuppgiftstjänsten"
+         syfte.innerHTML = "Identifiering av användare"
+         def.innerHTML = "Är en en identitetsbeteckning för en person som inte är eller har varit folkbokförd i Sverige"
+         kommentar.innerHTML = ""
+         källa.innerHTML = "Skatteverket"
+         syntax.innerHTML = "ÅÅÅÅMMDDNNNK där MM = 00 - 12, DD = 60 - 91"
+         tecken.innerHTML = ""
+         kodverk.innerHTML = ""
+         exData.innerHTML = `19700161XXXX`
+         /////////////////////////////////////////////////////////////////////////////////
+         // changing colors of the selected button (2)
+         infoBtn2.style.backgroundColor = "#b41083"
+
+        /////// changing buttons of the UNselected buttons
+        infoBtn1.style.backgroundColor = "#3c0580"
+        infoBtn3.style.backgroundColor = "#3c0580"
+        infoBtn4.style.backgroundColor = "#3c0580"
+
+        underline.classList.add("line")
+    } 
+    else{
+        dataInfo.style.display = "none"
+        infoBtn2.style.backgroundColor = "#3c0580"
+
+       
+    }
+
+})
+//// INFO BUTTON 3 - Tilltalsman
+infoBtn3.addEventListener('click', ()=>{
+    if(dataInfo.style.display == 'none' || dataInfo.style.display == 'block')
+    {
+        dataInfo.style.display = "block"
+        p.innerHTML = "Tilltalsnamn"
+         // inside data
+         synonym.innerHTML = "Namn"
+         attributENG.innerHTML = "Given Name"
+         attributMap.innerHTML = `SAMBI | INERA <br></br>`
+         källsystem.innerHTML = ""
+         syfte.innerHTML = ""
+         def.innerHTML = "Personens tilltalsnamn i klartext"
+         kommentar.innerHTML = ""
+         källa.innerHTML = ""
+         syntax.innerHTML = ""
+         tecken.innerHTML = ""
+         kodverk.innerHTML = ""
+         exData.innerHTML = ``
+         /////////////////////////////////////////////////////////////////////////////////
+         /////// changing colors of the selected button (3)
+        infoBtn3.style.backgroundColor = "#b41083"
+        
+        /////// changing buttons of the UN-selected buttons
+        infoBtn1.style.backgroundColor = "#3c0580"
+        infoBtn2.style.backgroundColor = "#3c0580"
+        infoBtn4.style.backgroundColor = "#3c0580"
+        underline.classList.add("line")
+    } 
+    else{
+        dataInfo.style.display = "none"
+        infoBtn3.style.backgroundColor = "#3c0580"
+
+       
+    }
+
+})
+infoBtn4.addEventListener('click', ()=>{
+    if(dataInfo.style.display == 'none' || dataInfo.style.display == 'block')
+    {
+        dataInfo.style.display = "block"
+        p.innerHTML = "Efternamn"
+         // inside data
+         synonym.innerHTML = "Efternamn"
+         attributENG.innerHTML = "Last Name"
+         attributMap.innerHTML = `SAMBI | INERA <br></br>`  + `<p class="sambi"> Surname </p>`
+         källsystem.innerHTML = "Personuppgiftstjänsten"
+         syfte.innerHTML = ""
+         def.innerHTML = "namn som anger släkt- eller familjetillhörighet"
+         kommentar.innerHTML = ""
+         källa.innerHTML = "Socialstyrelsen"
+         syntax.innerHTML = "1 - max antal tecken, Kan innehålla ’/’. Kan innehålla dubbla efternamn from 170701 $ "
+         tecken.innerHTML = "60"
+         kodverk.innerHTML = ""
+         exData.innerHTML = `van Basten Karlsson, Andersson, Larsson-Nilsson`
+         /////////////////////////////////////////////////////////////////////////////////
+         /////// changing colors of the selected button (3)
+        infoBtn4.style.backgroundColor = "#b41083"
+        
+        /////// changing buttons of the UN-selected buttons
+        infoBtn1.style.backgroundColor = "#3c0580"
+        infoBtn2.style.backgroundColor = "#3c0580"
+        infoBtn3.style.backgroundColor = "#3c0580"
+        underline.classList.add("line")
+    } 
+    else{
+        dataInfo.style.display = "none"
+        infoBtn4.style.backgroundColor = "#3c0580"
+
+       
+    }
+
+})
+// data pop-up close Btn events, removes the popup and the pink highlight colour on the button.
+closeBtn.addEventListener('click', ()=>{
+dataInfo.style.display = "none"
+infoBtn1.style.backgroundColor = "#3c0580"
+infoBtn2.style.backgroundColor = "#3c0580"
+infoBtn3.style.backgroundColor = "#3c0580"
+infoBtn4.style.backgroundColor = "#3c0580"
+})
+/////////////
+
+
