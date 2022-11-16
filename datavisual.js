@@ -5,7 +5,9 @@ let dataInfo = document.getElementById("dataDisplayId")
 let infoBtn1 = document.querySelector(".infoBtn1") 
 let infoBtn2 = document.querySelector(".infoBtn2") 
 let infoBtn3 = document.querySelector(".infoBtn3") 
-let infoBtn4 = document.querySelector(".infoBtn4") 
+let infoBtn4 = document.querySelector(".infoBtn4")
+let infoBtn5 = document.querySelector(".infoBtn5")
+let infoBtn6 = document.querySelector(".infoBtn6") 
 let closeBtn = document.querySelector(".exitImg") 
 let infoLogo = document.querySelector(".idImg")
 let p = document.querySelector(".dataP")
@@ -43,6 +45,8 @@ divAttribute.addEventListener('click', ()=>{
         infoBtn2.style.backgroundColor = "#3c0580"
         infoBtn3.style.backgroundColor = "#3c0580"
         infoBtn4.style.backgroundColor = "#3c0580"
+        infoBtn5.style.backgroundColor = "#3c0580"
+        infoBtn6.style.backgroundColor = "#3c0580"
     }
 })
 
@@ -76,6 +80,8 @@ infoBtn1.addEventListener('click', ()=>{
         infoBtn2.style.backgroundColor = "#3c0580"
         infoBtn3.style.backgroundColor = "#3c0580"
         infoBtn4.style.backgroundColor = "#3c0580"
+        infoBtn5.style.backgroundColor = "#3c0580"
+        infoBtn6.style.backgroundColor = "#3c0580"
        
         underline.classList.add("line")
     } 
@@ -113,6 +119,8 @@ infoBtn2.addEventListener('click', ()=>{
         infoBtn1.style.backgroundColor = "#3c0580"
         infoBtn3.style.backgroundColor = "#3c0580"
         infoBtn4.style.backgroundColor = "#3c0580"
+        infoBtn5.style.backgroundColor = "#3c0580"
+        infoBtn6.style.backgroundColor = "#3c0580"
 
         underline.classList.add("line")
     } 
@@ -151,6 +159,8 @@ infoBtn3.addEventListener('click', ()=>{
         infoBtn1.style.backgroundColor = "#3c0580"
         infoBtn2.style.backgroundColor = "#3c0580"
         infoBtn4.style.backgroundColor = "#3c0580"
+        infoBtn5.style.backgroundColor = "#3c0580"
+        infoBtn6.style.backgroundColor = "#3c0580"
         underline.classList.add("line")
     } 
     else{
@@ -187,11 +197,89 @@ infoBtn4.addEventListener('click', ()=>{
         infoBtn1.style.backgroundColor = "#3c0580"
         infoBtn2.style.backgroundColor = "#3c0580"
         infoBtn3.style.backgroundColor = "#3c0580"
+        infoBtn5.style.backgroundColor = "#3c0580"
+        infoBtn6.style.backgroundColor = "#3c0580"
         underline.classList.add("line")
     } 
     else{
         dataInfo.style.display = "none"
         infoBtn4.style.backgroundColor = "#3c0580"
+
+       
+    }
+
+})
+infoBtn5.addEventListener('click', ()=>{
+    if(dataInfo.style.display == 'none' || dataInfo.style.display == 'block')
+    {
+        dataInfo.style.display = "block"
+        p.innerHTML = "Födelsedatum"
+         // inside data
+         synonym.innerHTML = ""
+         attributENG.innerHTML = "Date Of Birth"
+         attributMap.innerHTML = ``
+         källsystem.innerHTML = "Personuppgiftstjänsten"
+         syfte.innerHTML = ""
+         def.innerHTML = "Datum då personen föddes"
+         kommentar.innerHTML = "Relevant när person inte har personnummer"
+         källa.innerHTML = ""
+         syntax.innerHTML = "Tre varianter av datum: ÅÅÅÅ, ÅÅÅÅMM, ÅÅÅÅMMDD"
+         tecken.innerHTML = ""
+         kodverk.innerHTML = ""
+         exData.innerHTML = ``
+         /////////////////////////////////////////////////////////////////////////////////
+         /////// changing colors of the selected button (3)
+        infoBtn5.style.backgroundColor = "#b41083"
+        
+        /////// changing buttons of the UN-selected buttons
+        infoBtn1.style.backgroundColor = "#3c0580"
+        infoBtn2.style.backgroundColor = "#3c0580"
+        infoBtn3.style.backgroundColor = "#3c0580"
+        infoBtn4.style.backgroundColor = "#3c0580"
+        infoBtn6.style.backgroundColor = "#3c0580"
+        underline.classList.add("line")
+    } 
+    else{
+        dataInfo.style.display = "none"
+        infoBtn5.style.backgroundColor = "#3c0580"
+
+       
+    }
+
+})
+infoBtn6.addEventListener('click', ()=>{
+    if(dataInfo.style.display == 'none' || dataInfo.style.display == 'block')
+    {
+        dataInfo.style.display = "block"
+        p.innerHTML = "Folkbokförings-Address"
+         // inside data
+         synonym.innerHTML = ""
+         attributENG.innerHTML = "Registration Address"
+         attributMap.innerHTML = ``
+         källsystem.innerHTML = "Personuppgiftstjänsten"
+         syfte.innerHTML = ""
+         def.innerHTML = `<p class="pdef">Folkbokföringsadress är adressen till en persons folkbokföringsfastighet (bostadsadress). Adressen är uppbyggd enligt svensk standard SS 61 34 01. Uppgifterna gäller enbart för uppgifter som kommer från Skatteverket (i praktiken personer med PNR/SNR). </p>`
+         kommentar.innerHTML = ""
+         källa.innerHTML = "Personuppgift-tjänsten"
+         syntax.innerHTML = "utdelningsadress1, utdelningsadress2, careOf, postnummer, postort"
+         tecken.innerHTML = ""
+         kodverk.innerHTML = ""
+         exData.innerHTML = ``
+         /////////////////////////////////////////////////////////////////////////////////
+         /////// changing colors of the selected button (3)
+        infoBtn6.style.backgroundColor = "#b41083"
+        
+        /////// changing buttons of the UN-selected buttons
+        infoBtn1.style.backgroundColor = "#3c0580"
+        infoBtn2.style.backgroundColor = "#3c0580"
+        infoBtn3.style.backgroundColor = "#3c0580"
+        infoBtn4.style.backgroundColor = "#3c0580"
+        infoBtn5.style.backgroundColor = "#3c0580"
+        underline.classList.add("line")
+    } 
+    else{
+        dataInfo.style.display = "none"
+        infoBtn6.style.backgroundColor = "#3c0580"
 
        
     }
@@ -204,6 +292,8 @@ infoBtn1.style.backgroundColor = "#3c0580"
 infoBtn2.style.backgroundColor = "#3c0580"
 infoBtn3.style.backgroundColor = "#3c0580"
 infoBtn4.style.backgroundColor = "#3c0580"
+infoBtn5.style.backgroundColor = "#3c0580"
+infoBtn6.style.backgroundColor = "#3c0580"
 })
 /////////////
 
