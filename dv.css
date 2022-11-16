@@ -1,5 +1,5 @@
 body {
-    background-color: #00a6e2;
+    background-color: rgba(35, 5, 53, 0.867);
     margin: 0;
 }
 .header {
@@ -15,6 +15,7 @@ display: block;
 justify-content: center;
 margin: auto;
 margin-top: 1em;
+
 }
 .menu{
 font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
@@ -31,33 +32,42 @@ display: block;
 text-align: center;
 font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 font-size: 23px;
+color: white;
 }
 .h1{
 padding-top: 28px;
 margin-top: 0;
 font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 font-size: 16px;
+color: white;
 }
 .sections{
 gap: 14em;
 font-size: 23px;
 width: 200px;
 text-align: center;
-
 font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 font-weight: 700;
 margin-top: 2em; 
 padding: 30px; 
 }
 .dataSection1{
-background-color: rgb(60, 5, 128);
+background-color: rgb(36, 206, 172);
 padding: 30px;
 border-radius: 10px;
 color: rgb(255, 255, 255);
 cursor: pointer;
+border: 2px solid rgb(255, 255, 255);
 }
 .dataSection1:hover{
     background-color: rgb(180, 16, 131);
+    text-decoration-line: underline;
+}
+.bgcolor{
+background-color: rgb(36, 206, 172);
+}
+.bgcolor:hover{
+    background-color: rgb(180, 16, 131);    
 }
 .dataSection2{
 background-color: rgb(33, 185, 76);
@@ -92,6 +102,10 @@ font-weight: 600;
     border-color: rgb(240, 240, 240);
     border-style: groove;
     color: aquamarine;
+}
+.dataSecDiv{
+    display: flex;
+    gap: 2.4em;
 }
 .visaMer{
 padding: 10px;
@@ -169,7 +183,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 font-size: 20px;
 color: aliceblue;
 position: absolute;
-top: 21.2em;
+top: 22.4em;
 right: 2em;
 }
 .dataInfo{
@@ -184,13 +198,13 @@ gap: 2rem;
     top: 1.2em;
  
 }
+
 .idImg{
 width: 70px;
 position: absolute;
 top: -2.2em;
 right: 20.4em;
 display: flex;
-
 }
 .dataP{
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
@@ -214,7 +228,7 @@ width: 160px;
 height: 200px;
 padding: 10px;
 /* background-color:  rgb(60, 5, 128); */
-background: linear-gradient(0deg, #0affad6b 0%, #5400B9 15%);
+background: linear-gradient(0deg, rgb(36, 206, 172) 0%, #5400B9 15%);
 border-radius: 10px;
 font-size: 13px;
 font-weight: 500;
@@ -255,17 +269,9 @@ margin-top: 0.4em;
         transform: scale(1);
     }
 }
-.line2{
-    animation: line 0.3s 
 
-}
-@keyframes line2  {
-    0% {
-        width: 40px;
-        transform: scale(1);
-    }
-    100% {
-        width: 255px;
-        transform: scale(1);
-    }
+.sambi{
+display: block;
+margin-right: 4.8em;
+margin-top: -0.2em;
 }

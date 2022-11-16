@@ -7,11 +7,14 @@ let infoBtn2 = document.querySelector(".infoBtn2")
 let infoBtn3 = document.querySelector(".infoBtn3") 
 let infoBtn4 = document.querySelector(".infoBtn4") 
 let closeBtn = document.querySelector(".exitImg") 
+let infoLogo = document.querySelector(".idImg")
 let p = document.querySelector(".dataP")
+let dataDiv1 = document.querySelector(".dataDiv1")
+let dataDiv2 = document.querySelector(".dataDiv2")
 p.classList.add("dataParagraph")
 let underline = document.getElementById("underline1")
 underline.classList.add("line")
-
+infoLogo.classList.add("dropdown")
 //// importing data info card from the html
 let synonym = document.getElementById("data1"); synonym.innerHTML = "";
 let attributENG = document.getElementById("data2"); attributENG.innerHTML = "";
@@ -31,13 +34,15 @@ data.style.display = "none"
 divAttribute.addEventListener('click', ()=>{
     if(data.style.display == 'none'){
         data.style.display = 'block';
-    
+        dataDiv1.style.backgroundColor = "rgb(180, 16, 131)"
     } else {
         data.style.display = 'none'
         dataInfo.style.display = "none"
+        dataDiv1.style.backgroundColor = "rgb(36, 206, 172)"
         infoBtn1.style.backgroundColor = "#3c0580"
         infoBtn2.style.backgroundColor = "#3c0580"
-
+        infoBtn3.style.backgroundColor = "#3c0580"
+        infoBtn4.style.backgroundColor = "#3c0580"
     }
 })
 
@@ -53,7 +58,7 @@ infoBtn1.addEventListener('click', ()=>{
         // inside data
         synonym.innerHTML = ""
         attributENG.innerHTML = "Social Security Number"
-        attributMap.innerHTML = `SAMBI | INERA <br></br> personal  identity Number`
+        attributMap.innerHTML = `SAMBI | INERA <br></br>` + `<p class="sambi"> Personal <br></br> identity <br></br>Number </p>`
         källsystem.innerHTML = "personuppgiftstjänsten"
         syfte.innerHTML = "Identifiering av användare"
         def.innerHTML = "Personer som är folkbokförda i Sverige får ett personnummer som identitetsbeteckning. Denna fås från Skatteverket och består av födelsetid, födelsenummer och kontrollsiffra."
@@ -90,7 +95,7 @@ infoBtn2.addEventListener('click', ()=>{
          // inside data
          synonym.innerHTML = ""
          attributENG.innerHTML = "Co-Ordination Number"
-         attributMap.innerHTML = `SAMBI | INERA <br></br> Personal identity Number`
+         attributMap.innerHTML = `SAMBI | INERA <br></br>`  + `<p class="sambi"> Personal <br></br> identity <br></br>Number </p>`
          källsystem.innerHTML = "Personuppgiftstjänsten"
          syfte.innerHTML = "Identifiering av användare"
          def.innerHTML = "Är en en identitetsbeteckning för en person som inte är eller har varit folkbokförd i Sverige"
@@ -164,7 +169,7 @@ infoBtn4.addEventListener('click', ()=>{
          // inside data
          synonym.innerHTML = "Efternamn"
          attributENG.innerHTML = "Last Name"
-         attributMap.innerHTML = `SAMBI | INERA <br></br> Surname`
+         attributMap.innerHTML = `SAMBI | INERA <br></br>`  + `<p class="sambi"> Surname </p>`
          källsystem.innerHTML = "Personuppgiftstjänsten"
          syfte.innerHTML = ""
          def.innerHTML = "namn som anger släkt- eller familjetillhörighet"
@@ -200,6 +205,6 @@ infoBtn2.style.backgroundColor = "#3c0580"
 infoBtn3.style.backgroundColor = "#3c0580"
 infoBtn4.style.backgroundColor = "#3c0580"
 })
-
 /////////////
+
 
